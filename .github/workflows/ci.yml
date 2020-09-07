@@ -18,11 +18,11 @@ jobs:
 
       - name: Install dependencies (macOS)
         run: brew install sfml
-        if: matrix.os == "macos-latest"
+        if: matrix.os == 'macos-latest'
 
       - name: Install dependencies (Ubuntu)
         run: sudo apt install libsfml-dev
-        if: matrix.os == "ubuntu-20.04"
+        if: matrix.os == 'ubuntu-20.04'
 
       - name: Configure CMake
         run: mkdir build && cmake -S . -B build -DCMAKE_BUILD_TYPE=$BUILD_TYPE
