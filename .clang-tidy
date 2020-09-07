@@ -1,0 +1,2 @@
+Checks: "*,-abseil-*,-fuchsia-*,-google-*,-llvm-*,-llvmlibc-*,-zircon-*"
+FormatStyle: none

@@ -1,0 +1,31 @@
+name: CI
+
+on: [push, pull_request]
+
+env:
+  BUILD_TYPE: Debug
+
+jobs:
+  build:
+    name: Build
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: ["macos-latest", "ubuntu-20.04"]
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install dependencies (macOS)
+        run: brew install sfml
+        if: matrix.os == "macos-latest"
+
+      - name: Install dependencies (Ubuntu)
+        run: sudo apt install libsfml-dev
+        if: matrix.os == "ubuntu-20.04"
+
+      - name: Configure CMake
+        run: mkdir build && cmake -S . -B build -DCMAKE_BUILD_TYPE=$BUILD_TYPE
+
+      - name: Build
+        run: cmake --build build --config $BUILD_TYPE
