@@ -25,7 +25,7 @@ jobs:
         if: matrix.os == 'ubuntu-20.04'
 
       - name: Configure CMake
-        run: mkdir build && cmake -S . -B build -DCMAKE_BUILD_TYPE=$BUILD_TYPE
+        run: cmake -S . -B build -DCMAKE_BUILD_TYPE=$BUILD_TYPE
 
       - name: Build
         run: cmake --build build --config $BUILD_TYPE
