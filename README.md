@@ -4,7 +4,7 @@
 
 Snake written using [SFML](https://github.com/SFML/SFML).
 
-## Getting started
+## Build from source
 
 ### Install dependencies
 
