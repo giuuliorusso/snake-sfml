@@ -4,6 +4,17 @@
 
 Snake written using [SFML](https://github.com/SFML/SFML).
 
+<p align="center">
+  <img src="./docs/screenshot1.png" width="450">
+  <img src="./docs/screenshot2.png" width="450">
+</p>
+
+## Keybindings
+
+| Key(s) | Action |
+| ------ | ------ |
+| Arrows<br>WASD | Move snake |
+
 ## Build from source
 
 ### Install dependencies
