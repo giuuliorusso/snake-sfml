@@ -5,8 +5,8 @@
 Snake written using [SFML](https://github.com/SFML/SFML).
 
 <p align="center">
-  <img src="./docs/screenshot1.png" width="450">
-  <img src="./docs/screenshot2.png" width="450">
+  <img src="./docs/screenshot1.png" width="400">
+  <img src="./docs/screenshot2.png" width="400">
 </p>
 
 ## Keybindings
